@@ -9,7 +9,54 @@
     clip: rect(0,0,0,0);
     border: 0;
   }
+/* Main menu for bigger screen? */
+#topmenu  {
+    display: flex;
+    height: 140px;
+    align-items: center;
+    flex-direction: row;
+    position: fixed;
+    top: 0; 
+    width: 100%; 
+    z-index: 10;
+    background: inherit;
+
+  }
+
+
+  .navigation ul {
+    text-align: center;
+    text-transform: uppercase;
+  }
   
+  .navigation li {
+    font-weight: 300;
+    letter-spacing: .2rem;
+    color:  darkgray;
+    display:inline;
+    padding: 10px 40px;
+
+  }
+    
+  .navigation a {
+    text-decoration: none;
+    color:  darkgray;
+  }
+
+  .navigation  li.here {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 4px;
+  }
+  
+  .navigation a:hover{
+    color:  black;
+    font-weight:    800;
+    text-decoration: none;
+  }
+
+
+
   /* Button styling */
   .menu-toggle {
     display: inline-block;
@@ -180,6 +227,7 @@
 
   @media only screen and (max-width: 767px) {
     #main-menu-toggle {display:inherit;}
+    #topmenu    {display: none;}
   }
   
 /* Extra small devices (phones, 600px and down) */
